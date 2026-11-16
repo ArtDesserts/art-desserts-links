@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1e9">
+  <title>Art Desserts Łódź — Znajdź nas</title>
+  <style>
+    :root { --brown: #895129; --cream: #f7f1e9; --ink: #38271d; --muted: #806d60; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 28px 18px; color: var(--ink);
+      background: radial-gradient(circle at top, #fffaf4 0, var(--cream) 70%);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    main {
+      width: min(100%, 430px); text-align: center; padding: 42px 25px 34px;
+      background: rgba(255,255,255,.72); border: 1px solid #e8d9ca;
+      border-radius: 26px; box-shadow: 0 16px 45px rgba(75,48,29,.09);
+    }
+    .mark { color: var(--brown); font-size: 13px; letter-spacing: .22em; text-transform: uppercase; }
+    h1 { margin: 15px 0 8px; font-size: clamp(30px, 8vw, 39px); font-weight: 500; }
+    .tagline { margin: 0 0 30px; color: var(--muted); font-size: 16px; }
+    .links { display: grid; gap: 13px; }
+    a {
+      display: flex; align-items: center; justify-content: center; gap: 11px;
+      min-height: 58px; padding: 14px 18px; border-radius: 15px;
+      color: white; background: var(--brown); text-decoration: none;
+      font: 600 16px Arial, sans-serif; transition: transform .15s, background .15s;
+    }
+    a:hover { background: #70401f; transform: translateY(-1px); }
+    .icon { width: 21px; height: 21px; flex: 0 0 21px; }
+    footer { margin-top: 27px; color: #9b887a; font: 12px Arial, sans-serif; letter-spacing: .04em; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">Art Desserts Łódź</div>
+    <h1>Słodkie chwile, wyjątkowe emocje</h1>
+    <p class="tagline">Znajdź nas w mediach społecznościowych</p>
+    <nav class="links" aria-label="Media społecznościowe">
+      <a href="https://www.instagram.com/art.desserts.lodz/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+        </svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/share/19bqkfH4sg/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4z"></path>
+        </svg>
+        Facebook
+      </a>
+    </nav>
+    <footer>ART DESSERTS · ŁÓDŹ</footer>
+  </main>
+</body>
+</html>
